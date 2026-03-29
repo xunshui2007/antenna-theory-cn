@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>天线增益 - 天线理论</title>
+    <style>
+        body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #1e3c72; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { color: #2E75B6; margin-top: 30px; }
+        .formula { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; margin: 15px 0; border: 2px dashed #667eea; }
+        .nav { background: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .nav a { color: #2E75B6; text-decoration: none; margin-right: 15px; }
+        .note { background: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 4px solid #2196F3; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="gaintest.html">← 上一篇：天线效率</a>
+        <a href="main.html">天线基础</a>
+        <a href="main.html">首页</a>
+    </div>
+    
+    <h1>天线增益（Gain）</h1>
+    
+    <p>天线增益描述的是天线在峰值辐射方向上发射的功率相对于各向同性天线的比值。</p>
+    
+    <div class="formula">
+        <strong>G = η × D</strong><br>
+        G = 天线增益 | η = 效率 | D = 方向性系数
+    </div>
+    
+    <h2>高增益天线一定好吗？</h2>
+    <ul>
+        <li><strong>电视天线</strong>：知道信号方向，高增益更好（12-15 dB）</li>
+        <li><strong>GPS天线</strong>：卫星分布各方向，低增益更合适</li>
+        <li><strong>手机天线</strong>：信号方向不确定，低增益更好</li>
+    </ul>
+    
+    <h2>增益单位说明</h2>
+    <ul>
+        <li><strong>dB</strong>：分贝，10 dB = 功率是各向同性天线的10倍</li>
+        <li><strong>dBi</strong>：相对于各向同性天线的分贝</li>
+        <li><strong>dBd</strong>：相对于偶极子天线的分贝（dBd = dBi - 2.15）</li>
+    </ul>
+    
+    <div class="note">
+        <strong>示例：</strong>7.85 dBd = 10 dBi，表示比偶极子天线高7.85 dB，比各向同性天线高10 dB。
+    </div>
+    
+    <p style="margin-top: 30px;">下一节：<a href="radPatDefs.html">波束宽度与旁瓣</a></p>
+</body>
+</html>

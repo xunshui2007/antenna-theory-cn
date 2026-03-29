@@ -1,0 +1,109 @@
+<html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<head>
+<!-- Google tag (gtag.js) -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>天线理论 - 频率进阶概念</title>
+<meta content="Pete Bevelacqua" name="author"/>
+<meta content="天线, 天线教程, 天线理论, 频率, 傅里叶分析, 天线基础" name="keywords"/>
+<meta content="关于频率的进阶讨论，解释频率为何如此重要。任何波形都可以分解为简单正弦波或余弦波的叠加。" name="description"/></head>
+<body bgcolor="D8D3FF" leftmargin="15">
+<center><h1><pre><font color="PURPLE" size="6">频率 - 进阶概念</font></pre></h1>
+<table border="1" width="720"><tr><td width="233"><center><font size="4"><a href="frequency.html">上一节：频率基础</a></font></center></td>
+<td width="233"><center><font size="4"><a href="main.html">天线基础知识</a></font></center></td>
+<td width="234"><center><font size="4"><a href="main.html">首页</a></font></center></td></tr></table>
+<p>
+<center>
+<!-- ad728x90-2020 -->
+</center><p>
+<hr width="50%"/>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+频率为什么如此根本？要真正理解这个问题，我们需要引入一个非常精妙的数学概念（真的很精妙），那就是"傅里叶分析"。我在斯坦福大学读研究生时上过一门傅里叶分析的课，教授把这些概念称为"宇宙的基本奥秘之一"。<p>
+<p align="justify">
+
+让我们从一个问题开始。下面这个波形的频率是多少？<p>
+<center>
+<img alt="一个代表电磁波场的随机波形" src="https://www.antenna-theory.com/basics/adFreq.jpg"/><p>
+<font color="PURPLE" size="4"><center>图1. 一个简单的波形。</center><p></p></font>
+<p align="justify">
+
+你会试着找它的周期，然后发现它在图示的范围内并不是周期性的。
+接着你可能会说这个问题本身就问得不对。不过，下面才是关键：<p>
+</p></p></p></center></p></p></p></p></font></td></tr></table>
+<table border="1" width="700">
+<tr><th><center><font color="Green" size="5">宇宙的基本奥秘之一</font></center></th><tr>
+<tr><td><font color="WHITE" size="5"><center><b>宇宙中所有的波形，无论你画出什么形状、观察到什么现象，实际上都是不同频率的简单正弦波叠加的结果。</b></center></font></td></tr></tr></tr></table>
+<p>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p>
+<p align="justify">
+
+举个例子，让我们把图1的波形分解成它的"基本组成部分"，也就是各个频率分量。
+这种分解可以通过<a href="http://www.thefouriertransform.com">傅里叶变换</a>（对于周期信号则用傅里叶级数）来完成。
+
+<p align="justify">
+
+第一个分量是一个周期为 T=6.28（2*pi）、振幅为0.3的正弦波，如图2所示。<p></p></p></p></p></font></td></tr></table>
+<img alt="波的第一个频率分量" src="https://www.antenna-theory.com/basics/waveS1.jpg"/><p>
+<table width="600"><tr><td><font color="purple" size="4">
+<center>图2. 第一个基频分量（左）与原始波形（右）的对比。</center><p>
+</p></font></td></tr></table>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+
+第二个频率分量的周期是第一个的一半（频率是第一个的两倍）。图3左侧展示了第二个分量，右侧则是前两个频率分量之和与原始波形的对比。<p></p></p></font></td></tr></table>
+<img alt="波的第一和第二个频率分量" src="https://www.antenna-theory.com/basics/waveS2.jpg"/><p>
+<table width="600"><tr><td><font color="purple" size="4">
+<center>图3. 第二个基频分量（左）以及前两个频率分量之和与原始波形的对比。</center><p>
+</p></font></td></tr></table>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+
+可以看到，前两个频率分量之和已经开始像原始波形了。第三个频率分量的频率是第一个的3倍。前3个分量的叠加结果如图4所示。<p></p></p></font></td></tr></table>
+<img alt="波的前三个频率分量" src="https://www.antenna-theory.com/basics/waveS3.jpg"/><p>
+<table width="720"><tr><td><font color="purple" size="4">
+<center>图4. 第三个基频分量（左）以及前三个频率分量之和与原始波形的对比。</center><p>
+</p></font></td></tr></table>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+
+最后，加入第四个频率分量后，我们就得到了原始波形，如图5所示。<p></p></p></font></td></tr></table>
+<img alt="波的前4个频率分量叠加后还原出原始波形" src="https://www.antenna-theory.com/basics/waveS4.jpg"/><p>
+<table width="600"><tr><td><font color="purple" size="4">
+<center>图5. 第四个基频分量（左）以及前四个频率分量之和与原始波形的对比（完全重合）。</center><p>
+</p></font></td></tr></table>
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+
+虽然这看起来像是人为构造的，但它对所有波形都成立。电视信号、手机信号、你说话时的声波，概莫能外。一般来说，波形并不是由有限个离散频率组成的，而是由连续的频率范围构成。
+<p>
+<p align="justify">
+
+因此，在整个天线理论中，我们都会把波长或频率作为关键参数来讨论。实际天线辐射的是真实的信号——WiFi上的互联网数据、语音信号等等。然而，既然宇宙中每一条信息都可以分解为不同频率的正弦和余弦分量，我们就总是用天线工作的波长或使用的频率来讨论天线特性。<p>
+<p align="justify">
+
+由此还可以引申出一个结果：天线能传输的功率被划分为不同的频率区域，即频段。
+在下一节中，我们将看看关于这些频段能说些什么。<p>
+</p></p></p></p></p></p></font></td></tr></table>
+<p>
+<center>
+<!-- ad728x90-2020 -->
+</center><p>
+<hr width="50%"/>
+<font size="4"><b>
+<center>
+<font color="green" size="5">
+<a href="freqBands.html">下一节：频段划分</a><p>
+<a href="main.html">天线基础知识</a>（目录）<p>
+<a href="main.html"><font color="green" size="5">首页</font></a><p>
+</p></p></p></font></center></b>
+</font></p></p></p></p></p></p></p></p></p></center>
+</body>
+</html>

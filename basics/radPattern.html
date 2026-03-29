@@ -1,0 +1,99 @@
+<html>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<head>
+<!-- Google tag (gtag.js) -->
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>辐射方向图</title>
+<meta content="Pete Bevelacqua" name="author"/>
+<meta content="天线, 天线教程, 天线理论, 天线基础, 辐射方向图, 天线方向图, 各向同性, 全向, 定向" name="keywords"/>
+<meta content="典型天线的辐射方向图介绍。讲解辐射方向图（又称天线方向图）的概念，包括各向同性、全向和定向辐射方向图。" name="description"/></head>
+<body bgcolor="D8D3FF" leftmargin="15">
+<center><h1><pre><font color="PURPLE" size="7">辐射方向图</font></pre></h1>
+<table border="1" width="720"><tr><td width="233"><center><font size="4">上一节：<a href="freqBands.html">频段划分</a></font></center></td>
+<td width="233"><center><font size="4"><a href="main.html">天线基础知识</a></font></center></td>
+<td width="234"><center><font size="4"><a href="main.html">首页</a></font></center></td></tr></table>
+<p>
+<center>
+<center>
+<!-- ad728x90-2020 -->
+</center>
+</center>
+<p>
+<hr width="50%"/>
+<font color="PURPLE" size="5">
+<table border="0" width="720">
+<tr><td><font size="4">
+<p align="justify">
+<b>辐射方向图</b>描述了天线辐射功率随偏离天线方向的变化规律。这种功率随到达角变化的特性是在天线的<a href="main.html">远场</a>中观测到的。<p>
+<p align="justify">
+以图1所示的三维辐射方向图为例，使用<a href="main.html">分贝（dB）</a>为单位绘制。<p>
+<center><img alt="三维辐射方向图" src="https://www.antenna-theory.com/basics/pattern.JPG"/><p>
+<font color="purple" size="4">图1. 天线辐射方向图示例（使用FEKO软件生成）。</font></p></center></p></p></p></p></font>
+<p>
+<p align="justify">
+这是一个环形（或称环面形）辐射方向图的例子。在这个例子中，沿z轴方向（即天线正上方）几乎不发射功率。在x-y平面内（垂直于z轴），辐射最强。这类图形有助于我们直观地看到天线在哪些方向上辐射。<p>
+<p align="justify">
+由于更加简洁，辐射方向图通常以二维方式绘制。这种情况下，方向图以三维空间的"切面"形式呈现。图1中相同的方向图以二维形式绘制在图2中。使用标准球坐标，
+<img alt="球坐标中的极角theta" src="https://www.antenna-theory.com/basics/theta.bmp"/>
+是从z轴量起的角度，
+<img alt="球坐标中的方位角phi" src="https://www.antenna-theory.com/basics/phi.bmp"/>
+是从x轴逆时针量起的角度。<p>
+</p></p></p></p></p></td></tr></table>
+<center><img alt="天线的二维辐射方向图" src="https://www.antenna-theory.com/basics/pattern2.jpg"/><p>
+图2. 二维辐射方向图。</p></center><p>
+<table width="700"><tr><td><font size="4">
+<p align="justify">
+如果你不熟悉辐射方向图或球坐标，理解图2表示的是与图1相同的辐射方向图可能需要一些时间。图2左侧是俯仰面方向图，表示辐射方向图随偏离z轴角度变化的情况（方位角固定）。观察图1可以看出，辐射方向图在0度和180度时最小，在天线的侧面（偏离z轴90度处）最大。这与图2左侧的图形一致。<p>
+<center>
+<!-- ad728x90-2020 -->
+</center>
+<p align="justify">
+图2右侧是方位面方向图，是在固定极角（本例中为偏离z轴90度）时方向图随方位角的变化。由于图1中的辐射方向图关于z轴对称，所以这个图在图2中呈现为一个常数。
+<p>
+<p align="justify">
+如果一个辐射方向图在所有方向上都相同，则称为"各向同性"方向图。
+具有各向同性辐射方向图的天线在实际中并不存在，但有时会作为与实际天线比较的参考。<p>
+<p align="justify">
+<a name="omni"></a>
+有些天线可以被描述为"全向"天线，这意味着它的辐射方向图在某一个平面内是各向同性的（如上面图1中的x-y平面，或图2右侧的方向图）。全向天线的例子包括<a href="main.html">偶极子天线</a>和<a href="main.html">缝隙天线</a>。<p>
+<p align="justify">
+
+第三类天线是"定向"天线，其辐射方向图不具有对称性。这类天线通常有一个单一的辐射峰值方向，大部分辐射功率沿该方向传播。
+这类天线非常常见；具有高度定向辐射方向图的天线包括<a href="main.html">抛物面天线</a>和<a href="main.html">开槽波导天线</a>。
+图3展示了一个高度定向辐射方向图（来自抛物面天线）的示例：<p>
+<center><img src="https://www.antenna-theory.com/antennas/reflectors/dish3.jpg"/><p>
+<font color="purple" size="5">图3. 抛物面天线的定向辐射方向图。</font></p></center><p>
+
+增益方向图通常以dB为单位绘制，表示天线在某一特定方向上的辐射功率相对于无损各向同性天线的比值。在图3中，峰值为29.3 dB。这个概念就是<a href="gain.html">天线增益</a>，将在后续章节中讨论。
+
+<p align="justify">
+
+
+下面是一个贴片天线阵列的交互式三维辐射方向图。底部的滑块可以让你看到辐射方向图随频率的变化。你可以旋转天线方向图从不同角度观察：
+
+
+
+对于同一个贴片阵列天线，下面展示了交互式二维方向图。这与上面三维方向图的数据相同，只是将XY、XZ和YZ平面以极坐标形式绘制出来。
+二维和三维辐射方向图在描述天线时都很常用。
+
+
+<p align="justify">
+简而言之，辐射方向图是一种让我们直观地看到天线在哪些方向发射或接收功率的图形。<p>
+<center>
+<center>
+<!-- ad728x90-2020 -->
+</center>
+<hr width="50%"/>
+<p>
+       下一节：<a href="fieldRegions.html">场区</a><p>
+<a href="main.html">天线基础知识</a><p>
+<a href="main.html">首页</a><p>
+</p></p></p></p></center>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p></font>
+</td></tr></table></p></font></p></p></center>
+<font size="4">
+<a href="#">English Version of this Page</a><p>
+本辐射方向图页面版权所有 antenna-theory.com, 2009-2025。<p>
+<p>
+</p></p></p></font></body>
+</html>

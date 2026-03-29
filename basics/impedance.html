@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><title>天线阻抗 - 天线理论</title>
+<style>body{font-family:-apple-system,'Microsoft YaHei',sans-serif;line-height:1.8;max-width:800px;margin:0 auto;padding:20px}h1{color:#1e3c72;border-bottom:3px solid #667eea;padding-bottom:10px}h2{color:#2E75B6;margin-top:30px}.formula{background:#f8f9fa;padding:15px;border-radius:8px;text-align:center;margin:15px 0;border:2px dashed #667eea}.nav{background:#f5f5f5;padding:15px;border-radius:8px;margin-bottom:20px}.nav a{color:#2E75B6;text-decoration:none;margin-right:15px}.note{background:#e3f2fd;padding:15px;border-radius:8px;border-left:4px solid #2196F3;margin:15px 0}</style></head>
+<body>
+<div class="nav"><a href="radPatDefs.html">← 上一篇：波束宽度与旁瓣</a> <a href="main.html">天线基础</a> <a href="main.html">首页</a></div>
+<h1>天线阻抗（Impedance）</h1>
+<p>天线的阻抗描述了天线输入端电压与电流的比值关系。</p>
+<div class="formula"><strong>Z = V / I = R + jX</strong><br>R = 实部（辐射电阻）| X = 虚部（无功分量）</div>
+<h2>阻抗匹配</h2>
+<p>为了实现最大功率传输，天线阻抗应满足：</p>
+<div class="formula"><strong>ZA = ZS*</strong><br>共轭匹配条件</div>
+<h2>电压驻波比（VSWR）</h2>
+<ul>
+<li><strong>VSWR = 1</strong>：完美匹配，无反射</li>
+<li><strong>VSWR = 3.0</strong>：约75%功率传输（1.25 dB损耗）</li>
+<li><strong>VSWR = 7.0</strong>：约44%功率传输（3.6 dB损耗）</li>
+<li><strong>VSWR ≥ 6</strong>：通常需要改善匹配</li>
+</ul>
+<div class="note"><strong>谐振天线</strong>：输入阻抗为纯实数（虚部为零）的天线</div>
+<p style="margin-top:30px">下一节：<a href="bandwidth.html">带宽</a></p>
+</body></html>

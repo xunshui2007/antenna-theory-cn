@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天线理论完整版 - Antenna Theory</title>
+    <style>
+        * { margin: 0; padding:0; box-sizing:border-box; }
+        body {
+            font-family: -apple-system, 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .header .subtitle {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .header .info {
+            margin-top: 20px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .content {
+            padding: 40px 30px;
+        }
+        .intro {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            border-left: 4px solid #667eea;
+        }
+        .chapters {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .chapter {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.3s;
+            text-decoration: none;
+            color: #333;
+            display: block;
+        }
+        .chapter:hover {
+            background: #e8f4fd;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+        .chapter .num {
+            font-size: 14px;
+            color: #667eea;
+            font-weight: bold;
+        }
+        .chapter .title {
+            font-size: 16px;
+            margin-top: 5px;
+        }
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+        .footer p {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📡 天线理论完整版</h1>
+            <p class="subtitle">Antenna Theory - Complete Guide</p>
+            <p class="info">内容来源：antenna-theory.com/cn/basics | 共 17 个章节 | 无广告版</p>
+        </header>
+        
+        <main class="content">
+            <div class="intro">
+                <p>本教程涵盖天线理论的所有基础知识，从频率、辐射方向图到增益、阻抗、带宽等核心概念，帮助你全面理解天线工作原理。</p>
+            </div>
+            
+            <div class="chapters">
+                <a href="basics/main.html" class="chapter">
+                    <div class="num">第1章</div>
+                    <div class="title">天线基础理论概述</div>
+                </a>
+                <a href="basics/frequency.html" class="chapter">
+                    <div class="num">第2章</div>
+                    <div class="title">频率 (Frequency)</div>
+                </a>
+                <a href="basics/advfreq.html" class="chapter">
+                    <div class="num">第3章</div>
+                    <div class="title">频率进阶知识</div>
+                </a>
+                <a href="basics/freqBands.html" class="chapter">
+                    <div class="num">第4章</div>
+                    <div class="title">频段划分</div>
+                </a>
+                <a href="basics/radPattern.html" class="chapter">
+                    <div class="num">第5章</div>
+                    <div class="title">辐射方向图</div>
+                </a>
+                <a href="basics/fieldRegions.html" class="chapter">
+                    <div class="num">第6章</div>
+                    <div class="title">场区 (Field Regions)</div>
+                </a>
+                <a href="basics/directivity.html" class="chapter">
+                    <div class="num">第7章</div>
+                    <div class="title">方向性系数</div>
+                </a>
+                <a href="basics/gaintest.html" class="chapter">
+                    <div class="num">第8章</div>
+                    <div class="title">天线效率</div>
+                </a>
+                <a href="basics/gain.html" class="chapter">
+                    <div class="num">第9章</div>
+                    <div class="title">天线增益 (Gain)</div>
+                </a>
+                <a href="basics/radPatDefs.html" class="chapter">
+                    <div class="num">第10章</div>
+                    <div class="title">波束宽度与旁瓣</div>
+                </a>
+                <a href="basics/impedance.html" class="chapter">
+                    <div class="num">第11章</div>
+                    <div class="title">天线阻抗 (Impedance)</div>
+                </a>
+                <a href="basics/bandwidth.html" class="chapter">
+                    <div class="num">第12章</div>
+                    <div class="title">带宽 (Bandwidth)</div>
+                </a>
+                <a href="basics/polarization.html" class="chapter">
+                    <div class="num">第13章</div>
+                    <div class="title">极化 (Polarization)</div>
+                </a>
+                <a href="basics/aperture.html" class="chapter">
+                    <div class="num">第14章</div>
+                    <div class="title">有效口径 (Aperture)</div>
+                </a>
+                <a href="basics/friis.html" class="chapter">
+                    <div class="num">第15章</div>
+                    <div class="title">弗里斯传输公式</div>
+                </a>
+                <a href="basics/temperature.html" class="chapter">
+                    <div class="num">第16章</div>
+                    <div class="title">天线温度</div>
+                </a>
+                <a href="basics/whyantennasradiate.html" class="chapter">
+                    <div class="num">第17章</div>
+                    <div class="title">天线为什么会辐射</div>
+                </a>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p>内容来源：antenna-theory.com/cn/basics</p>
+            <p style="margin-top:10px">本页面无广告，可自由分享</p>
+        </footer>
+    </div>
+</body>
+</html>

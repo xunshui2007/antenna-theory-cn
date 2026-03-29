@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>方向性系数 - 天线理论</title>
+    <style>
+        body { font-family: -apple-system, 'Microsoft YaHei', sans-serif; line-height: 1.8; max-width: 800px; margin: 0 auto; padding: 20px; }
+        h1 { color: #1e3c72; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
+        h2 { color: #2E75B6; margin-top: 30px; }
+        .formula { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; margin: 15px 0; border: 2px dashed #667eea; }
+        .nav { background: #f5f5f5; padding: 15px; border-radius: 8px; margin-bottom: 20px; }
+        .nav a { color: #2E75B6; text-decoration: none; margin-right: 15px; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+        th { background: #2E75B6; color: white; }
+        .note { background: #e3f2fd; padding: 15px; border-radius: 8px; border-left: 4px solid #2196F3; margin: 15px 0; }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <a href="fieldRegions.html">← 上一篇：场区</a>
+        <a href="main.html">天线基础</a>
+        <a href="main.html">首页</a>
+    </div>
+    
+    <h1>方向性系数（Directivity）</h1>
+    
+    <p>方向性系数是天线的一个基本参数，用来衡量天线辐射方向图的"定向"程度。一个在所有方向上均匀辐射的天线实际上没有方向性，这种天线的方向性系数为1（即0 dB）。</p>
+    
+    <div class="formula">
+        <strong>D = 4π / ΩA</strong><br>
+        ΩA = 波束立体角
+    </div>
+    
+    <h2>典型天线的方向性系数</h2>
+    
+    <table>
+        <tr><th>天线类型</th><th>方向性系数</th><th>方向性系数 (dB)</th></tr>
+        <tr><td>短偶极子天线</td><td>1.5</td><td>1.76</td></tr>
+        <tr><td>半波偶极子天线</td><td>1.64</td><td>2.15</td></tr>
+        <tr><td>贴片（微带）天线</td><td>3.2-6.3</td><td>5-8</td></tr>
+        <tr><td>喇叭天线</td><td>10-100</td><td>10-20</td></tr>
+        <tr><td>抛物面天线</td><td>10-10,000</td><td>10-40</td></tr>
+    </table>
+    
+    <h2>天线设计原则</h2>
+    <ul>
+        <li><strong>低方向性系数</strong>：天线电尺寸较小（0.25-0.5λ），如手机天线、车载收音机</li>
+        <li><strong>高方向性系数</strong>：天线尺寸远大于波长，如卫星天线、雷达天线</li>
+    </ul>
+    
+    <div class="note">
+        <strong>傅里叶变换原理：</strong>小天线具有宽的辐射方向图（低方向性系数），大天线具有窄的辐射方向图（高方向性系数）。
+    </div>
+    
+    <p style="margin-top: 30px;">下一节：<a href="gaintest.html">天线效率</a></p>
+</body>
+</html>

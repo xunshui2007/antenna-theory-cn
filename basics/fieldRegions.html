@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>场区（Field Regions）- 天线理论</title>
+</head>
+<body>
+<div class="nav">
+<a href="radPattern.html">← 上一篇：辐射方向图</a>
+<a href="main.html">天线基础</a>
+<a href="main.html">首页</a>
+</div>
+<h1>场区（Field Regions）</h1>
+<p>天线周围的场可分为三个主要区域：</p>
+<ul>
+<li><strong>无功近场区（Reactive Near Field）</strong></li>
+<li><strong>辐射近场区，又称菲涅耳区（Fresnel Region）</strong></li>
+<li><strong>远场区，又称夫琅禾费区（Fraunhofer Region）</strong></li>
+</ul>
+<p>远场区是最重要的区域，因为它决定了天线的辐射方向图。由于天线用于远距离无线通信，远场区是大多数天线的实际工作区域。我们先从远场区开始介绍。</p>
+<h2>远场区（夫琅禾费区）</h2>
+<p>顾名思义，远场区就是距离天线较远的区域。在该区域中，辐射方向图的形状不随距离(R)改变。虽然电场和磁场的强度仍然以1/R的速率衰减，但功率密度以1/R²的速率衰减。远场区以辐射场为主导，电场和磁场相互正交，并且都垂直于传播方向，与平面波的特性一致。</p>
+<p>如果天线的最大线性尺寸为D，波长为λ，那么要处于远场区，必须同时满足以下三个条件：</p>
+<div class="formula">
+<strong>条件1：R ≫ D</strong><br/>
+<strong>条件2：R ≫ λ</strong><br/>
+<strong>条件3：R &gt; 2D²/λ</strong>
+</div>
+<p>上面的第一个和第二个公式确保了天线不同部分在给定方向上辐射的功率近似平行。这有助于保证远场区域的场表现得像平面波。注意，"≫"表示"远远大于"，通常认为当左边至少是右边的10倍时即满足条件。</p>
+<div class="note">
+<strong>第三个远场条件的由来：</strong>在辐射天线附近，存在无功场，其电场和磁场随距离分别以1/R²和1/R³的速率衰减。第三个公式确保了这些近场分量已经消失，只剩下辐射场，而辐射场随距离以1/R的速率衰减。
+    </div>
+<p>远场区有时也被称为夫琅禾费区，这个名称源自光学领域。</p>
+<h2>无功近场区（Reactive Near Field）</h2>
+<p>在天线的紧邻区域，就是无功近场区。在该区域中，场以无功场为主，这意味着电场和磁场之间存在90度的相位差（请回忆一下，对于传播的辐射场，电场和磁场是正交的但相位相同）。</p>
+<p>该区域的边界通常定义为：</p>
+<div class="formula">
+<strong>R &lt; 0.62√(D³/λ)</strong>
+</div>
+<h2>辐射近场区（菲涅耳区）</h2>
+<p>辐射近场区（即菲涅耳区）是近场和远场之间的过渡区域。在该区域中，无功场不再占主导地位，辐射场开始显现。但与远场区不同的是，这里辐射方向图的形状可能随距离发生明显变化。</p>
+<p>该区域的范围通常定义为：</p>
+<div class="formula">
+<strong>0.62√(D³/λ) &lt; R &lt; 2D²/λ</strong>
+</div>
+<p>需要注意，根据D和波长的具体值，这个区域有可能不存在。</p>
+<h2>场区划分总结</h2>
+<div class="note">
+<strong>场区划分示意图：</strong><br/><br/>
+<strong>无功近场区：</strong>R &lt; 0.62√(D³/λ)<br/>
+<strong>菲涅耳区：</strong>0.62√(D³/λ) &lt; R &lt; 2D²/λ<br/>
+<strong>远场区：</strong>R &gt; 2D²/λ
+    </div>
+<p style="margin-top: 30px; color: #666;">接下来，我们将学习 <a href="directivity.html">方向性系数</a>。</p>
+</body>
+</html>
