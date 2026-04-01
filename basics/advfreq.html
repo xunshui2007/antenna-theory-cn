@@ -1,4 +1,142 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天线理论 - 频率进阶概念 - Antenna Theory</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        .nav-bar {
+            background: #f0f0f0;
+            padding: 15px 30px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+        .nav-bar a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .content {
+            padding: 40px 30px;
+            line-height: 1.9;
+        }
+        .content h2 {
+            color: #1e3c72;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .content h3 {
+            color: #2a5298;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+        .content ul, .content ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .content li {
+            margin-bottom: 8px;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .content table th, .content table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .content table th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        .content table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+        .content a:hover {
+            color: #5568d3;
+            border-bottom-color: #5568d3;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+        }
+        .footer p { opacity: 0.8; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📡 天线理论 - 频率进阶概念</h1>
+            <p>Antenna Theory - Complete Guide</p>
+        </header>
+        
+        <div class="nav-bar">
+            <a href="../index.html">🏠 返回首页</a>
+            <a href="main.html">📚 章节列表</a>
+            <a href="index.html">📖 所有章节</a>
+        </div>
+        
+        <main class="content">
+            <html>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <head>
 <!-- Google tag (gtag.js) -->
@@ -7,103 +145,111 @@
 <meta content="Pete Bevelacqua" name="author"/>
 <meta content="天线, 天线教程, 天线理论, 频率, 傅里叶分析, 天线基础" name="keywords"/>
 <meta content="关于频率的进阶讨论，解释频率为何如此重要。任何波形都可以分解为简单正弦波或余弦波的叠加。" name="description"/></head>
-<body bgcolor="D8D3FF" leftmargin="15">
-<center><h1><pre><font color="PURPLE" size="6">频率 - 进阶概念</font></pre></h1>
-<table border="1" width="720"><tr><td width="233"><center><font size="4"><a href="frequency.html">上一节：频率基础</a></font></center></td>
-<td width="233"><center><font size="4"><a href="main.html">天线基础知识</a></font></center></td>
-<td width="234"><center><font size="4"><a href="main.html">首页</a></font></center></td></tr></table>
+<body  >
+<div style="text-align: center;"><h1><pre style="background: #f5f5f5; padding: 15px; border-radius: 6px; overflow-x: auto;">频率 - 进阶概念</pre></h1>
+
 <p>
-<center>
-<!-- ad728x90-2020 -->
-</center><p>
-<hr width="50%"/>
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+<div style="text-align: center;">
+
+</div><p>
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 频率为什么如此根本？要真正理解这个问题，我们需要引入一个非常精妙的数学概念（真的很精妙），那就是"傅里叶分析"。我在斯坦福大学读研究生时上过一门傅里叶分析的课，教授把这些概念称为"宇宙的基本奥秘之一"。<p>
-<p align="justify">
+<p style="text-align: justify;">
 
 让我们从一个问题开始。下面这个波形的频率是多少？<p>
-<center>
-<img alt="一个代表电磁波场的随机波形" src="https://www.antenna-theory.com/basics/adFreq.jpg"/><p>
-<font color="PURPLE" size="4"><center>图1. 一个简单的波形。</center><p></p></font>
-<p align="justify">
+<div style="text-align: center;">
+<img alt="一个代表电磁波场的随机波形" src="https://www.antenna-theory.com/basics/adFreq.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+<div style="text-align: center;">图1. 一个简单的波形。</div>
+<p style="text-align: justify;">
 
 你会试着找它的周期，然后发现它在图示的范围内并不是周期性的。
 接着你可能会说这个问题本身就问得不对。不过，下面才是关键：<p>
-</p></p></p></center></p></p></p></p></font></td></tr></table>
-<table border="1" width="700">
-<tr><th><center><font color="Green" size="5">宇宙的基本奥秘之一</font></center></th><tr>
-<tr><td><font color="WHITE" size="5"><center><b>宇宙中所有的波形，无论你画出什么形状、观察到什么现象，实际上都是不同频率的简单正弦波叠加的结果。</b></center></font></td></tr></tr></tr></table>
+</p></p></p></div></p></p></p></p></td></tr></table>
+<table  >
+<tr><th><div style="text-align: center;">宇宙的基本奥秘之一</div></th><tr>
+<tr><td><div style="text-align: center;"><strong>宇宙中所有的波形，无论你画出什么形状、观察到什么现象，实际上都是不同频率的简单正弦波叠加的结果。</strong></div></td></tr></tr></tr></table>
 <p>
-<table border="0" width="720">
-<tr><td><font size="4">
+<table  >
+<tr><td>
 <p>
-<p align="justify">
+<p style="text-align: justify;">
 
 举个例子，让我们把图1的波形分解成它的"基本组成部分"，也就是各个频率分量。
 这种分解可以通过<a href="http://www.thefouriertransform.com">傅里叶变换</a>（对于周期信号则用傅里叶级数）来完成。
 
-<p align="justify">
+<p style="text-align: justify;">
 
-第一个分量是一个周期为 T=6.28（2*pi）、振幅为0.3的正弦波，如图2所示。<p></p></p></p></p></font></td></tr></table>
-<img alt="波的第一个频率分量" src="https://www.antenna-theory.com/basics/waveS1.jpg"/><p>
-<table width="600"><tr><td><font color="purple" size="4">
-<center>图2. 第一个基频分量（左）与原始波形（右）的对比。</center><p>
-</p></font></td></tr></table>
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+第一个分量是一个周期为 T=6.28（2*pi）、振幅为0.3的正弦波，如图2所示。</p></p></p></td></tr></table>
+<img alt="波的第一个频率分量" src="https://www.antenna-theory.com/basics/waveS1.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+<table ><tr><td>
+<div style="text-align: center;">图2. 第一个基频分量（左）与原始波形（右）的对比。</div><p>
+</p></td></tr></table>
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 
-第二个频率分量的周期是第一个的一半（频率是第一个的两倍）。图3左侧展示了第二个分量，右侧则是前两个频率分量之和与原始波形的对比。<p></p></p></font></td></tr></table>
-<img alt="波的第一和第二个频率分量" src="https://www.antenna-theory.com/basics/waveS2.jpg"/><p>
-<table width="600"><tr><td><font color="purple" size="4">
-<center>图3. 第二个基频分量（左）以及前两个频率分量之和与原始波形的对比。</center><p>
-</p></font></td></tr></table>
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+第二个频率分量的周期是第一个的一半（频率是第一个的两倍）。图3左侧展示了第二个分量，右侧则是前两个频率分量之和与原始波形的对比。</p></td></tr></table>
+<img alt="波的第一和第二个频率分量" src="https://www.antenna-theory.com/basics/waveS2.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+<table ><tr><td>
+<div style="text-align: center;">图3. 第二个基频分量（左）以及前两个频率分量之和与原始波形的对比。</div><p>
+</p></td></tr></table>
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 
-可以看到，前两个频率分量之和已经开始像原始波形了。第三个频率分量的频率是第一个的3倍。前3个分量的叠加结果如图4所示。<p></p></p></font></td></tr></table>
-<img alt="波的前三个频率分量" src="https://www.antenna-theory.com/basics/waveS3.jpg"/><p>
-<table width="720"><tr><td><font color="purple" size="4">
-<center>图4. 第三个基频分量（左）以及前三个频率分量之和与原始波形的对比。</center><p>
-</p></font></td></tr></table>
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+可以看到，前两个频率分量之和已经开始像原始波形了。第三个频率分量的频率是第一个的3倍。前3个分量的叠加结果如图4所示。</p></td></tr></table>
+<img alt="波的前三个频率分量" src="https://www.antenna-theory.com/basics/waveS3.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+<table ><tr><td>
+<div style="text-align: center;">图4. 第三个基频分量（左）以及前三个频率分量之和与原始波形的对比。</div><p>
+</p></td></tr></table>
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 
-最后，加入第四个频率分量后，我们就得到了原始波形，如图5所示。<p></p></p></font></td></tr></table>
-<img alt="波的前4个频率分量叠加后还原出原始波形" src="https://www.antenna-theory.com/basics/waveS4.jpg"/><p>
-<table width="600"><tr><td><font color="purple" size="4">
-<center>图5. 第四个基频分量（左）以及前四个频率分量之和与原始波形的对比（完全重合）。</center><p>
-</p></font></td></tr></table>
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+最后，加入第四个频率分量后，我们就得到了原始波形，如图5所示。</p></td></tr></table>
+<img alt="波的前4个频率分量叠加后还原出原始波形" src="https://www.antenna-theory.com/basics/waveS4.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+<table ><tr><td>
+<div style="text-align: center;">图5. 第四个基频分量（左）以及前四个频率分量之和与原始波形的对比（完全重合）。</div><p>
+</p></td></tr></table>
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 
 虽然这看起来像是人为构造的，但它对所有波形都成立。电视信号、手机信号、你说话时的声波，概莫能外。一般来说，波形并不是由有限个离散频率组成的，而是由连续的频率范围构成。
 <p>
-<p align="justify">
+<p style="text-align: justify;">
 
 因此，在整个天线理论中，我们都会把波长或频率作为关键参数来讨论。实际天线辐射的是真实的信号——WiFi上的互联网数据、语音信号等等。然而，既然宇宙中每一条信息都可以分解为不同频率的正弦和余弦分量，我们就总是用天线工作的波长或使用的频率来讨论天线特性。<p>
-<p align="justify">
+<p style="text-align: justify;">
 
 由此还可以引申出一个结果：天线能传输的功率被划分为不同的频率区域，即频段。
 在下一节中，我们将看看关于这些频段能说些什么。<p>
-</p></p></p></p></p></p></font></td></tr></table>
+</p></p></p></p></p></p></td></tr></table>
 <p>
-<center>
-<!-- ad728x90-2020 -->
-</center><p>
-<hr width="50%"/>
-<font size="4"><b>
-<center>
-<font color="green" size="5">
+<div style="text-align: center;">
+
+</div><p>
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+<strong>
+<div style="text-align: center;">
+
 <a href="freqBands.html">下一节：频段划分</a><p>
 <a href="main.html">天线基础知识</a>（目录）<p>
-<a href="main.html"><font color="green" size="5">首页</font></a><p>
-</p></p></p></font></center></b>
-</font></p></p></p></p></p></p></p></p></p></center>
+<a href="main.html">首页</a><p>
+</p></p></p></div></strong>
+</p></p></p></p></p></p></p></p></p></div>
+</body>
+</html>
+        </main>
+        
+        <footer class="footer">
+            <p>📡 天线理论完整版 | Antenna Theory - Complete Guide</p>
+            <p>内容来源：antenna-theory.com/cn/basics | 无广告版</p>
+            <p style="margin-top: 15px; opacity: 0.6;">© 2026 | 本页面可自由分享与使用</p>
+        </footer>
+    </div>
 </body>
 </html>

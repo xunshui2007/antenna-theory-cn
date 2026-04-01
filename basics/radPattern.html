@@ -1,4 +1,142 @@
-<html>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>辐射方向图 - Antenna Theory</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        .nav-bar {
+            background: #f0f0f0;
+            padding: 15px 30px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+        .nav-bar a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .content {
+            padding: 40px 30px;
+            line-height: 1.9;
+        }
+        .content h2 {
+            color: #1e3c72;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .content h3 {
+            color: #2a5298;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+        .content ul, .content ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .content li {
+            margin-bottom: 8px;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .content table th, .content table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .content table th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        .content table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+        .content a:hover {
+            color: #5568d3;
+            border-bottom-color: #5568d3;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+        }
+        .footer p { opacity: 0.8; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📡 辐射方向图</h1>
+            <p>Antenna Theory - Complete Guide</p>
+        </header>
+        
+        <div class="nav-bar">
+            <a href="../index.html">🏠 返回首页</a>
+            <a href="main.html">📚 章节列表</a>
+            <a href="index.html">📖 所有章节</a>
+        </div>
+        
+        <main class="content">
+            <html>
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <head>
 <!-- Google tag (gtag.js) -->
@@ -7,93 +145,97 @@
 <meta content="Pete Bevelacqua" name="author"/>
 <meta content="天线, 天线教程, 天线理论, 天线基础, 辐射方向图, 天线方向图, 各向同性, 全向, 定向" name="keywords"/>
 <meta content="典型天线的辐射方向图介绍。讲解辐射方向图（又称天线方向图）的概念，包括各向同性、全向和定向辐射方向图。" name="description"/></head>
-<body bgcolor="D8D3FF" leftmargin="15">
-<center><h1><pre><font color="PURPLE" size="7">辐射方向图</font></pre></h1>
-<table border="1" width="720"><tr><td width="233"><center><font size="4">上一节：<a href="freqBands.html">频段划分</a></font></center></td>
-<td width="233"><center><font size="4"><a href="main.html">天线基础知识</a></font></center></td>
-<td width="234"><center><font size="4"><a href="main.html">首页</a></font></center></td></tr></table>
+<body  >
+<div style="text-align: center;"><h1><pre style="background: #f5f5f5; padding: 15px; border-radius: 6px; overflow-x: auto;">辐射方向图</pre></h1>
+
 <p>
-<center>
-<center>
-<!-- ad728x90-2020 -->
-</center>
-</center>
+<div style="text-align: center;">
+<div style="text-align: center;">
+
+</div>
+</div>
 <p>
-<hr width="50%"/>
-<font color="PURPLE" size="5">
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
-<b>辐射方向图</b>描述了天线辐射功率随偏离天线方向的变化规律。这种功率随到达角变化的特性是在天线的<a href="main.html">远场</a>中观测到的。<p>
-<p align="justify">
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+<table  >
+<tr><td>
+<p style="text-align: justify;">
+<strong>辐射方向图</strong>描述了天线辐射功率随偏离天线方向的变化规律。这种功率随到达角变化的特性是在天线的<a href="main.html">远场</a>中观测到的。<p>
+<p style="text-align: justify;">
 以图1所示的三维辐射方向图为例，使用<a href="main.html">分贝（dB）</a>为单位绘制。<p>
-<center><img alt="三维辐射方向图" src="https://www.antenna-theory.com/basics/pattern.JPG"/><p>
-<font color="purple" size="4">图1. 天线辐射方向图示例（使用FEKO软件生成）。</font></p></center></p></p></p></p></font>
+<div style="text-align: center;"><img alt="三维辐射方向图" src="https://www.antenna-theory.com/basics/pattern.JPG"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+图1. 天线辐射方向图示例（使用FEKO软件生成）。</p></div></p></p></p></p>
 <p>
-<p align="justify">
+<p style="text-align: justify;">
 这是一个环形（或称环面形）辐射方向图的例子。在这个例子中，沿z轴方向（即天线正上方）几乎不发射功率。在x-y平面内（垂直于z轴），辐射最强。这类图形有助于我们直观地看到天线在哪些方向上辐射。<p>
-<p align="justify">
+<p style="text-align: justify;">
 由于更加简洁，辐射方向图通常以二维方式绘制。这种情况下，方向图以三维空间的"切面"形式呈现。图1中相同的方向图以二维形式绘制在图2中。使用标准球坐标，
-<img alt="球坐标中的极角theta" src="https://www.antenna-theory.com/basics/theta.bmp"/>
+<img alt="球坐标中的极角theta" src="https://www.antenna-theory.com/basics/theta.bmp"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;">
 是从z轴量起的角度，
-<img alt="球坐标中的方位角phi" src="https://www.antenna-theory.com/basics/phi.bmp"/>
+<img alt="球坐标中的方位角phi" src="https://www.antenna-theory.com/basics/phi.bmp"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;">
 是从x轴逆时针量起的角度。<p>
 </p></p></p></p></p></td></tr></table>
-<center><img alt="天线的二维辐射方向图" src="https://www.antenna-theory.com/basics/pattern2.jpg"/><p>
-图2. 二维辐射方向图。</p></center><p>
-<table width="700"><tr><td><font size="4">
-<p align="justify">
+<div style="text-align: center;"><img alt="天线的二维辐射方向图" src="https://www.antenna-theory.com/basics/pattern2.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+图2. 二维辐射方向图。</p></div><p>
+<table ><tr><td>
+<p style="text-align: justify;">
 如果你不熟悉辐射方向图或球坐标，理解图2表示的是与图1相同的辐射方向图可能需要一些时间。图2左侧是俯仰面方向图，表示辐射方向图随偏离z轴角度变化的情况（方位角固定）。观察图1可以看出，辐射方向图在0度和180度时最小，在天线的侧面（偏离z轴90度处）最大。这与图2左侧的图形一致。<p>
-<center>
-<!-- ad728x90-2020 -->
-</center>
-<p align="justify">
+<div style="text-align: center;">
+
+</div>
+<p style="text-align: justify;">
 图2右侧是方位面方向图，是在固定极角（本例中为偏离z轴90度）时方向图随方位角的变化。由于图1中的辐射方向图关于z轴对称，所以这个图在图2中呈现为一个常数。
 <p>
-<p align="justify">
+<p style="text-align: justify;">
 如果一个辐射方向图在所有方向上都相同，则称为"各向同性"方向图。
 具有各向同性辐射方向图的天线在实际中并不存在，但有时会作为与实际天线比较的参考。<p>
-<p align="justify">
+<p style="text-align: justify;">
 <a name="omni"></a>
 有些天线可以被描述为"全向"天线，这意味着它的辐射方向图在某一个平面内是各向同性的（如上面图1中的x-y平面，或图2右侧的方向图）。全向天线的例子包括<a href="main.html">偶极子天线</a>和<a href="main.html">缝隙天线</a>。<p>
-<p align="justify">
+<p style="text-align: justify;">
 
 第三类天线是"定向"天线，其辐射方向图不具有对称性。这类天线通常有一个单一的辐射峰值方向，大部分辐射功率沿该方向传播。
 这类天线非常常见；具有高度定向辐射方向图的天线包括<a href="main.html">抛物面天线</a>和<a href="main.html">开槽波导天线</a>。
 图3展示了一个高度定向辐射方向图（来自抛物面天线）的示例：<p>
-<center><img src="https://www.antenna-theory.com/antennas/reflectors/dish3.jpg"/><p>
-<font color="purple" size="5">图3. 抛物面天线的定向辐射方向图。</font></p></center><p>
+<div style="text-align: center;"><img src="https://www.antenna-theory.com/antennas/reflectors/dish3.jpg"/ style="max-width: 100%; height: auto; border-radius: 6px; margin: 15px 0;"><p>
+图3. 抛物面天线的定向辐射方向图。</p></div><p>
 
 增益方向图通常以dB为单位绘制，表示天线在某一特定方向上的辐射功率相对于无损各向同性天线的比值。在图3中，峰值为29.3 dB。这个概念就是<a href="gain.html">天线增益</a>，将在后续章节中讨论。
 
-<p align="justify">
-
+<p style="text-align: justify;">
 
 下面是一个贴片天线阵列的交互式三维辐射方向图。底部的滑块可以让你看到辐射方向图随频率的变化。你可以旋转天线方向图从不同角度观察：
-
-
 
 对于同一个贴片阵列天线，下面展示了交互式二维方向图。这与上面三维方向图的数据相同，只是将XY、XZ和YZ平面以极坐标形式绘制出来。
 二维和三维辐射方向图在描述天线时都很常用。
 
-
-<p align="justify">
+<p style="text-align: justify;">
 简而言之，辐射方向图是一种让我们直观地看到天线在哪些方向发射或接收功率的图形。<p>
-<center>
-<center>
-<!-- ad728x90-2020 -->
-</center>
-<hr width="50%"/>
+<div style="text-align: center;">
+<div style="text-align: center;">
+
+</div>
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
 <p>
        下一节：<a href="fieldRegions.html">场区</a><p>
 <a href="main.html">天线基础知识</a><p>
 <a href="main.html">首页</a><p>
-</p></p></p></p></center>
-</p></p></p></p></p></p></p></p></p></p></p></p></p></p></font>
-</td></tr></table></p></font></p></p></center>
-<font size="4">
+</p></p></p></p></div>
+</p></p></p></p></p></p></p></p></p></p></p></p></p></p>
+</td></tr></table></p></p></p></div>
+
 <a href="#">English Version of this Page</a><p>
 本辐射方向图页面版权所有 antenna-theory.com, 2009-2025。<p>
 <p>
-</p></p></p></font></body>
+</p></p></p></body>
+</html>
+        </main>
+        
+        <footer class="footer">
+            <p>📡 天线理论完整版 | Antenna Theory - Complete Guide</p>
+            <p>内容来源：antenna-theory.com/cn/basics | 无广告版</p>
+            <p style="margin-top: 15px; opacity: 0.6;">© 2026 | 本页面可自由分享与使用</p>
+        </footer>
+    </div>
+</body>
 </html>

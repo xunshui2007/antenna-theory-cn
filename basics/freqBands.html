@@ -1,4 +1,142 @@
-<html><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天线理论 - 频段划分 - Antenna Theory</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px 30px;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 14px; }
+        .nav-bar {
+            background: #f0f0f0;
+            padding: 15px 30px;
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid #ddd;
+            flex-wrap: wrap;
+        }
+        .nav-bar a {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 13px;
+            transition: all 0.3s;
+        }
+        .nav-bar a:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+        }
+        .content {
+            padding: 40px 30px;
+            line-height: 1.9;
+        }
+        .content h2 {
+            color: #1e3c72;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #667eea;
+            padding-bottom: 10px;
+        }
+        .content h3 {
+            color: #2a5298;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+        .content p {
+            margin-bottom: 15px;
+        }
+        .content ul, .content ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .content li {
+            margin-bottom: 8px;
+        }
+        .content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .content table th, .content table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+        .content table th {
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        .content table tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .content a {
+            color: #667eea;
+            text-decoration: none;
+            border-bottom: 1px dotted #667eea;
+        }
+        .content a:hover {
+            color: #5568d3;
+            border-bottom-color: #5568d3;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+        .footer {
+            background: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-size: 13px;
+        }
+        .footer p { opacity: 0.8; margin: 5px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📡 天线理论 - 频段划分</h1>
+            <p>Antenna Theory - Complete Guide</p>
+        </header>
+        
+        <div class="nav-bar">
+            <a href="../index.html">🏠 返回首页</a>
+            <a href="main.html">📚 章节列表</a>
+            <a href="index.html">📖 所有章节</a>
+        </div>
+        
+        <main class="content">
+            <html><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
 <head>
 <!-- Google tag (gtag.js) -->
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -6,122 +144,130 @@
 <meta content="Pete Bevelacqua" name="author"/>
 <meta content="天线, 天线教程, 天线理论, 天线基础, 频段, 频率范围, VHF, UHF, HF" name="keywords"/>
 <meta content="天线理论中常用的频段列表，包括X波段、VHF、UHF、HF等频段。" name="description"/></head>
-<body bgcolor="D8D3FF" leftmargin="15">
-<center><h1><pre><font color="PURPLE" size="7">频段划分</font></pre></h1>
-<table border="1" width="720"><tr><td width="200"><center><font size="4"><a href="frequency.html">上一节：频率进阶概念</a></font></center></td>
-<td width="200"><center><font size="4"><a href="main.html">天线基础知识</a></font></center></td>
-<td width="200"><center><font size="4"><a href="main.html">首页</a></font></center></td></tr></table>
-<hr width="50%"/>
+<body  >
+<div style="text-align: center;"><h1><pre style="background: #f5f5f5; padding: 15px; border-radius: 6px; overflow-x: auto;">频段划分</pre></h1>
+
+<hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
 <p>
-<center>
-<!-- ad728x90-2020 -->
-</center>
+<div style="text-align: center;">
+
+</div>
 <p>
-<table width="1080">
+<table >
 <tr>
-<td valign="top" width="160">
+<td valign="top" >
 </td>
-<td width="20">
+<td >
 </td>
-<td width="720">
-<table border="0" width="720">
-<tr><td><font size="4">
-<p align="justify">
+<td >
+<table  >
+<tr><td>
+<p style="text-align: justify;">
 你的手机和电视怎么能同时工作呢？它们都通过天线接收电磁波中的信息，为什么不会相互干扰？<p>
-<p align="justify">
+<p style="text-align: justify;">
 答案要回到前面说的宇宙基本奥秘。无论你想发送什么信息，该波形都可以表示为一系列频率分量的叠加。通过调制技术（简单来说就是把要发送的波形频率范围搬移到更高的频段），这些波形就可以被安排到不同的频段中。<p>
-<p align="justify">
+<p style="text-align: justify;">
 举个例子，使用PCS（个人通信服务）频段的手机，其信号被搬移到1850-1900 MHz。电视信号主要在54-216 MHz频段广播。FM广播电台工作在87.5-108 MHz之间。<p>
-<p align="justify">
+<p style="text-align: justify;">
 所有频率的集合被称为"频谱"。手机运营商要花大价钱才能获得频谱的使用权。例如，AT&amp;T必须在FCC（联邦通信委员会）的拍卖中竞标某一段频谱的"使用权"，才能在该频段内传输信息。电磁能量的发射受到严格监管。当AT&amp;T购买了某一段频谱后，它不能在其他频段发射能量（严格来说，在相邻频段的发射功率必须低于某个门限值）。<p>
-<p align="justify">
-信号的<b>带宽</b>是其最高频率和最低频率之差。
+<p style="text-align: justify;">
+信号的<strong>带宽</strong>是其最高频率和最低频率之差。
 例如，在40至50 MHz之间传输的信号带宽为10 MHz。这意味着该信号的能量集中在40到50 MHz之间（其他频率范围内的能量可以忽略不计）。
 <p>
-<p align="justify">
+<p style="text-align: justify;">
 最后，我们用一张频段表和对应的波长来做个总结。
 从表中可以看出，VHF的范围是30-300
 <a href="main.html">MHz</a>
 （每秒3千万至3亿次振荡）。
 有了这些知识，至少当有人说他们需要一个"VHF天线"时，你应该能理解这意味着该天线需要发射或接收频率在30-300 MHz范围内的电磁波。
  <p>
-</p></p></p></p></p></p></p></p></p></p></p></p></font></td></tr>
+</p></p></p></p></p></p></p></p></p></p></p></p></td></tr>
 </table>
 </td>
-<td width="180"></td>
+<td ></td>
 </tr>
 </table>
-<table border="2"><tr>
-<th width="250"><font size="4">频段名称
-<th width="200">频率范围
-<th width="200">波长（米）</th>
-<th width="300">应用</th></th></font></th></tr>
+<table ><tr>
+<th >频段名称
+<th >频率范围
+<th >波长（米）</th>
+<th >应用</th></th></th></tr>
 <tr>
-<td><center>极低频 (ELF)</center></td>
-<td><center>3-30 Hz</center></td>
-<td><center>10,000-100,000 km</center></td>
-<td><center>水下通信</center></td></tr>
+<td><div style="text-align: center;">极低频 (ELF)</div></td>
+<td><div style="text-align: center;">3-30 Hz</div></td>
+<td><div style="text-align: center;">10,000-100,000 km</div></td>
+<td><div style="text-align: center;">水下通信</div></td></tr>
 <tr>
-<td><center>超低频 (SLF)</center></td>
-<td><center>30-300 Hz</center></td>
-<td><center>1,000-10,000 km</center></td>
-<td><center>交流电源（虽然不是辐射波）</center></td></tr>
-<tr><td><center>特低频 (ULF)</center></td>
-<td><center>300-3000 Hz</center></td>
-<td><center>100-1,000 km</center></td>
-<td><center></center></td></tr>
-<tr><td><center>甚低频 (VLF)</center></td>
-<td><center>3-30 kHz</center></td>
-<td><center>10-100 km</center></td>
-<td><center>导航信标</center></td></tr>
-<tr><td><center>低频 (LF)</center></td>
-<td><center>30-300 kHz</center></td>
-<td><center>1-10 km</center></td>
-<td><center>AM广播</center></td></tr>
-<tr><td><center>中频 (MF)</center></td>
-<td><center>300-3000 kHz</center></td>
-<td><center>100-1,000 m</center></td>
-<td><center>航空和AM广播</center></td></tr>
-<tr><td><center>高频 (HF)</center></td>
-<td><center>3-30 MHz</center></td>
-<td><center>10-100 m</center></td>
-<td><center>短波广播</center></td></tr>
-<tr><td><center>甚高频 (VHF)</center></td>
-<td><center>30-300 MHz</center></td>
-<td><center>1-10 m</center></td>
-<td><center>FM广播</center></td></tr>
-<tr><td><center>特高频 (UHF)</center></td>
-<td><center>300-3000 MHz</center></td>
-<td><center>10-100 cm</center></td>
-<td><center>电视、移动电话、GPS</center></td></tr>
-<tr><td><center>超高频 (SHF)</center></td>
-<td><center>3-30 GHz</center></td>
-<td><center>1-10 cm</center></td>
-<td><center>卫星链路、5-7GHz WiFi、超宽带</center></td></tr>
-<tr><td><center>极高频 (EHF)</center></td>
-<td><center>30-300 GHz</center></td>
-<td><center>1-10 mm</center></td>
-<td><center>天文观测、车载雷达、毫米波5G</center></td></tr>
-<tr><td><center>可见光</center></td>
-<td><center>400-790 THz (4*10^14-7.9*10^14)</center></td>
-<td><center>380-750 nm（纳米）</center></td>
-<td><center>人眼</center></td></tr>
+<td><div style="text-align: center;">超低频 (SLF)</div></td>
+<td><div style="text-align: center;">30-300 Hz</div></td>
+<td><div style="text-align: center;">1,000-10,000 km</div></td>
+<td><div style="text-align: center;">交流电源（虽然不是辐射波）</div></td></tr>
+<tr><td><div style="text-align: center;">特低频 (ULF)</div></td>
+<td><div style="text-align: center;">300-3000 Hz</div></td>
+<td><div style="text-align: center;">100-1,000 km</div></td>
+<td><div style="text-align: center;"></div></td></tr>
+<tr><td><div style="text-align: center;">甚低频 (VLF)</div></td>
+<td><div style="text-align: center;">3-30 kHz</div></td>
+<td><div style="text-align: center;">10-100 km</div></td>
+<td><div style="text-align: center;">导航信标</div></td></tr>
+<tr><td><div style="text-align: center;">低频 (LF)</div></td>
+<td><div style="text-align: center;">30-300 kHz</div></td>
+<td><div style="text-align: center;">1-10 km</div></td>
+<td><div style="text-align: center;">AM广播</div></td></tr>
+<tr><td><div style="text-align: center;">中频 (MF)</div></td>
+<td><div style="text-align: center;">300-3000 kHz</div></td>
+<td><div style="text-align: center;">100-1,000 m</div></td>
+<td><div style="text-align: center;">航空和AM广播</div></td></tr>
+<tr><td><div style="text-align: center;">高频 (HF)</div></td>
+<td><div style="text-align: center;">3-30 MHz</div></td>
+<td><div style="text-align: center;">10-100 m</div></td>
+<td><div style="text-align: center;">短波广播</div></td></tr>
+<tr><td><div style="text-align: center;">甚高频 (VHF)</div></td>
+<td><div style="text-align: center;">30-300 MHz</div></td>
+<td><div style="text-align: center;">1-10 m</div></td>
+<td><div style="text-align: center;">FM广播</div></td></tr>
+<tr><td><div style="text-align: center;">特高频 (UHF)</div></td>
+<td><div style="text-align: center;">300-3000 MHz</div></td>
+<td><div style="text-align: center;">10-100 cm</div></td>
+<td><div style="text-align: center;">电视、移动电话、GPS</div></td></tr>
+<tr><td><div style="text-align: center;">超高频 (SHF)</div></td>
+<td><div style="text-align: center;">3-30 GHz</div></td>
+<td><div style="text-align: center;">1-10 cm</div></td>
+<td><div style="text-align: center;">卫星链路、5-7GHz WiFi、超宽带</div></td></tr>
+<tr><td><div style="text-align: center;">极高频 (EHF)</div></td>
+<td><div style="text-align: center;">30-300 GHz</div></td>
+<td><div style="text-align: center;">1-10 mm</div></td>
+<td><div style="text-align: center;">天文观测、车载雷达、毫米波5G</div></td></tr>
+<tr><td><div style="text-align: center;">可见光</div></td>
+<td><div style="text-align: center;">400-790 THz (4*10^14-7.9*10^14)</div></td>
+<td><div style="text-align: center;">380-750 nm（纳米）</div></td>
+<td><div style="text-align: center;">人眼</div></td></tr>
 </table><p>
-<table width="500"><tr><th><font size="4"><center>表1. 常用频段一览表</center></font></th></tr></table><p>
-<table width="720"><tr><td><font size="4">
-<p align="justify">
+<table ><tr><th><div style="text-align: center;">表1. 常用频段一览表</div></th></tr></table><p>
+<table ><tr><td>
+<p style="text-align: justify;">
 基本上，每个频段都是从最低频率到其10倍的频率范围。天线工程师还会进一步将频段细分为"X波段"、"Ku波段"等。以上就是频率的基础知识。如需更深入地理解，请继续学习下一个专题。
 
-       </p></font></td></tr>
+       </p></td></tr>
 </table><p>
-<center>
-<!-- ad728x90-2020 -->
-</center>
-<center><hr width="50%"/><p>
+<div style="text-align: center;">
+
+</div>
+<div style="text-align: center;"><hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;"><p>
 <a href="radPattern.html">下一节：辐射方向图</a><p>
 <a href="main.html">天线基础知识</a><p>
 <a href="main.html">首页</a><p>
-</p></p></p></p></center>
-</p></p></p></p></p></center>
+</p></p></p></p></div>
+</p></p></p></p></p></div>
+</body>
+</html>
+        </main>
+        
+        <footer class="footer">
+            <p>📡 天线理论完整版 | Antenna Theory - Complete Guide</p>
+            <p>内容来源：antenna-theory.com/cn/basics | 无广告版</p>
+            <p style="margin-top: 15px; opacity: 0.6;">© 2026 | 本页面可自由分享与使用</p>
+        </footer>
+    </div>
 </body>
 </html>
